@@ -69,6 +69,5 @@ jobs:
           aws deploy create-deployment \
           --application-name hanghae-spring-5w \
           --deployment-group-name sparta-spring \
-          --file-exists-behavior OVERWRITE \
           --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=$PROJECT_NAME.zip \
           --region ap-northeast-2
